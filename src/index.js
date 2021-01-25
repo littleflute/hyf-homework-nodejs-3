@@ -10,6 +10,15 @@ app.get('/users',function(req,res){
 	res.json([]);
 })
 
+// CREATE
+app.post('/users',(req,res)=>{
+    var o = {};
+    o.name = "xd";
+    res.json({success: true,data: o})
+  })
+
+  
+
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
