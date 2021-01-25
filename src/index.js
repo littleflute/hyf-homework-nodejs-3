@@ -6,14 +6,14 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 app.get('/users',function(req,res){
-	console.log("step-2");
+	console.log("xdtest: step-2");
 	res.json([]);
 })
 
 // CREATE
 app.post('/users',(req,res)=>{
     var o = {};
-    o.name = "xd";
+    o.id = 0;
     res.json({success: true,data: o})
   })
 
