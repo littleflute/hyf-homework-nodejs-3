@@ -5,6 +5,10 @@ const port = 3000
 app.get('/', (req, res) => {
   res.send('Hello World!')
 })
+app.get('/users',function(req,res){
+	console.log("step-2");
+	res.json([]);
+})
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
