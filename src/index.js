@@ -23,3 +23,8 @@ app.route('/user/:id')
 .get((req,res)=>{
     res.json([{success: true,data: 0}])
 }) 
+// DELETE
+.delete((req,res)=>{
+	console.log("xdtest: step-4.11");
+  // User.findByIdAndDelete()
+})
