@@ -35,9 +35,9 @@ describe('User RESTful', () => {
 
     }); 
 
-    /*
+    //*
     it('Should return the last created GET /users', () => {
-      console.log("xdtest: step-3.21");
+      console.log("xdtest: step-3.23");
 
       const request = cy.request({
         method: 'GET',
