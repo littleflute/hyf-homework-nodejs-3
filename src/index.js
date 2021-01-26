@@ -21,20 +21,5 @@ app.post('/user',(req,res)=>{
 app.route('/users/:id')
 // READ
 .get((req,res)=>{
-  // User.findById()
-  var o = {};
-    o.id = 0;
-    res.json({success: true,data: o})
-})
-// UPDATE
-.put((req,res)=>{
-  // User.findByIdAndUpdate()
-})
-// DELETE
-.delete((req,res)=>{
-  // User.findByIdAndDelete()
-})
-
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
-})
+    res.json([{success: true,data: 0}])
+}) 
