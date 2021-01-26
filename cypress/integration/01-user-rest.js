@@ -28,11 +28,11 @@ describe('User RESTful', () => {
     
     //*
     it('Should return StatusCode: 200, body: { id: 0  } to POST /user', () => {
-      console.log("xdtest: step-3.13");
+      console.log("xdtest: step-3.14");
 
       expect(response.status).to.eq(200);
 
-     // request.its('body').should('deep.eq', { id: 0 });
+      request.its('body').should('deep.eq', { id: 0 });
 
     });
     //*/
