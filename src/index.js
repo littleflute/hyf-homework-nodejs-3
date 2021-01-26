@@ -6,10 +6,20 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 app.get('/users',function(req,res){
-	console.log("step-2");
+	console.log("xdtest: step-2");
 	res.json([]);
 })
 
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
-})
+// CREATE
+app.post('/user',(req,res)=>{
+	console.log("xdtest: step-3.13");
+     
+    res.json({success: true,data: 0})
+  })
+
+  
+app.route('/user/:id')
+// READ
+.get((req,res)=>{
+    res.json([{success: true,data: 0}])
+}) 
