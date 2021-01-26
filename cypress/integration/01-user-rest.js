@@ -34,8 +34,7 @@ describe('User RESTful', () => {
       request.its('body').should('deep.eq', { id: 0 });
 
     }); 
-
-    //*
+ 
     it('Should return the last created GET /users', () => {
       console.log("xdtest: step-3.24");
 
@@ -50,10 +49,9 @@ describe('User RESTful', () => {
 
       request.its('body').should('deep.eq', [ { id: 0 } ]);
 
-    });
+    }); 
 
-    //*/
-    /*
+    //*
     it('Should return the user from GET /user/:id', () => {
 
       const request = cy.request({

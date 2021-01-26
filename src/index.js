@@ -18,7 +18,7 @@ app.post('/user',(req,res)=>{
   })
 
   
-app.route('/users/:id')
+app.route('/user/:id')
 // READ
 .get((req,res)=>{
     res.json([{success: true,data: 0}])
