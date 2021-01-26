@@ -12,10 +12,12 @@ app.get('/users',function(req,res){
 
 // CREATE
 app.post('/users',(req,res)=>{
-	console.log("xdtest: step-3");
+	console.log("xdtest: step-3.11");
     var o = {};
     o.id = 0;
-    res.json({success: true,data: o})
+    var l = [];
+    l.push(o);
+    res.json({success: true,data: l})
   })
 
   
