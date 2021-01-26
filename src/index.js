@@ -13,11 +13,8 @@ app.get('/users',function(req,res){
 // CREATE
 app.post('/user',(req,res)=>{
 	console.log("xdtest: step-3.13");
-    var o = {};
-    o.id = 0;
-    var l = [];
-    l.push(o);
-    res.json({success: true,data: l})
+     
+    res.json({success: true,data: 0})
   })
 
   

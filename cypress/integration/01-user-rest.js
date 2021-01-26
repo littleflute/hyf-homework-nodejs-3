@@ -27,7 +27,7 @@ describe('User RESTful', () => {
 
      
     it('Should return StatusCode: 200, body: { id: 0  } to POST /user', () => {
-      console.log("xdtest: step-3.14");
+      console.log("xdtest: step-3.22");
 
       expect(response.status).to.eq(200);
 
@@ -35,7 +35,7 @@ describe('User RESTful', () => {
 
     }); 
 
-    //*
+    /*
     it('Should return the last created GET /users', () => {
       console.log("xdtest: step-3.21");
 
