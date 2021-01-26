@@ -11,8 +11,8 @@ app.get('/users',function(req,res){
 })
 
 // CREATE
-app.post('/users',(req,res)=>{
-	console.log("xdtest: step-3.11");
+app.post('/user',(req,res)=>{
+	console.log("xdtest: step-3.13");
     var o = {};
     o.id = 0;
     var l = [];
