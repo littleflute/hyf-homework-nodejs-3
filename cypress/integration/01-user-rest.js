@@ -25,15 +25,18 @@ describe('User RESTful', () => {
 
     });
 
+     
     it('Should return StatusCode: 200, body: { id: 0  } to POST /user', () => {
+      console.log("xdtest: step-3.22");
 
       expect(response.status).to.eq(200);
 
       request.its('body').should('deep.eq', { id: 0 });
 
-    });
-
+    }); 
+ 
     it('Should return the last created GET /users', () => {
+      console.log("xdtest: step-3.24");
 
       const request = cy.request({
         method: 'GET',
@@ -46,9 +49,10 @@ describe('User RESTful', () => {
 
       request.its('body').should('deep.eq', [ { id: 0 } ]);
 
-    });
-
+    }); 
+ 
     it('Should return the user from GET /user/:id', () => {
+      console.log("xdtest: step-3.31");
 
       const request = cy.request({
         method: 'GET',
@@ -61,7 +65,7 @@ describe('User RESTful', () => {
 
       request.its('body').should('deep.eq', { id: 0 });
 
-    });
+    }); 
 
   });
 
