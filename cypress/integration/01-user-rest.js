@@ -25,6 +25,7 @@ describe('User RESTful', () => {
 
     });
 
+    /*
     it('Should return StatusCode: 200, body: { id: 0  } to POST /user', () => {
 
       expect(response.status).to.eq(200);
@@ -62,6 +63,8 @@ describe('User RESTful', () => {
       request.its('body').should('deep.eq', { id: 0 });
 
     });
+
+    //*/
 
   });
 
